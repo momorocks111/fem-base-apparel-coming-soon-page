@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="logo__mobile logo">
+      <img src="images/logo.svg" alt="" class="logo__img" />
+    </div>
+    <main>
+      <article class="first-article">
+        <div class="logo__desktop">
+          <img src="images/logo.svg" alt="" class="logo__img" />
+        </div>
+        <h2 class="header__title"><span> We're </span> coming soon</h2>
+        <p class="header__subtitle">
+          Hello fellow shoppers! We're currently building our new fashion store.
+          Add your email below to stay-up-to-date with announcements and our
+          launch deals.
+        </p>
+        <form>
+          <div class="form__container">
+            <div class="form__content">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+                class="email__input"
+              />
+              <label for="email">
+                <img
+                  src="images/icon-error.svg"
+                  alt=""
+                  class="error__img"
+                  id="error-img"
+                />
+              </label>
+              <button type="submit" class="submit__btn" id="submit-btn">
+                <img
+                  src="images/icon-arrow.svg"
+                  alt=""
+                  class="arrow__image"
+                  id="arrow-img"
+                />
+              </button>
+            </div>
+          </div>
+          <p class="form__error" id="form-error"></p>
+        </form>
+      </article>
+
+      <article>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="images/hero-desktop.jpg"
+            class="desktop__img"
+          />
+          <img src="images/hero-mobile.jpg" alt="" class="mobile__img" />
+        </picture>
+      </article>
+    </main>
+    <!-- <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">momorocks111</a>.
+      </p>
+    </footer> -->
+    <script src="script.js"></script>
+  </body>
+</html>

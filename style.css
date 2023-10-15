@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+:root {
+  /* Colors */
+  --Desaturated-Red: hsl(0, 36%, 70%);
+  --Soft-Red: hsl(0, 93%, 68%);
+  --Dark-Grayish-Red: hsl(0, 6%, 24%);
+  --first-linear: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --second-linear: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  /* Typography */
+  --main-font-size: 16px;
+
+  /* Font */
+  --main-font: "Josefin Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.logo__img {
+  width: 100px;
+}
+
+.logo__desktop {
+  display: none;
+}
+
+.logo__mobile {
+  padding: 1.775rem 0 2rem 1.775rem;
+}
+
+main article picture img {
+  width: 100%;
+  margin-bottom: 4rem;
+}
+
+.header__title {
+  font-family: var(--main-font);
+  color: var(--Dark-Grayish-Red);
+  font-size: 2.4rem;
+  text-align: center;
+  text-transform: uppercase;
+  margin-inline: 1.5rem;
+  letter-spacing: 0.8rem;
+  margin-bottom: 1.8rem;
+}
+
+.header__title span {
+  color: var(--Desaturated-Red);
+  font-weight: 300;
+}
+
+.header__subtitle {
+  margin-inline: 2.6rem;
+  color: var(--Desaturated-Red);
+  text-align: center;
+  font-size: 13px;
+  font-family: var(--main-font);
+  opacity: 1;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.form__container {
+  display: flex;
+  justify-content: center;
+}
+
+.form__content {
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(238, 185, 185);
+  border-radius: 60px;
+}
+
+.error-line {
+  border: 1px solid red;
+}
+
+.email__input {
+  border: none;
+  outline: none;
+  color: var(--Desaturated-Red);
+  font-family: var(--main-font);
+  font-size: 14px;
+  margin-left: 1.25rem;
+  margin-right: 1rem;
+}
+
+.email__input::placeholder {
+  color: var(--Desaturated-Red);
+  font-family: var(--main-font);
+  font-size: 14px;
+}
+
+.submit__btn {
+  background-image: var(--second-linear);
+  border: none;
+  outline: none;
+  border-radius: 60px;
+  margin-left: 1rem;
+  cursor: pointer;
+  transition: all 0.4s;
+  box-shadow: 0 0 10px rgb(255, 173, 173);
+}
+
+.submit__btn:hover {
+  transform: scale(1.1);
+}
+
+.arrow__image {
+  padding: 12px 25px 12px 25px;
+}
+
+.error__img {
+  margin-top: 5px;
+  visibility: hidden;
+}
+
+.form__error {
+  margin-bottom: 4rem;
+  margin-left: 3.5rem;
+  margin-top: 0.35rem;
+  color: var(--Desaturated-Red);
+}
+
+@media screen and (min-width: 420px) {
+  .form__error {
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .form__error {
+    margin-left: 10rem;
+  }
+}
+@media screen and (min-width: 650px) {
+  .form__error {
+    margin-left: 12rem;
+  }
+}
+@media screen and (min-width: 700px) {
+  .form__error {
+    margin-left: 14rem;
+  }
+}
+@media screen and (min-width: 750px) {
+  .form__error {
+    margin-left: 16rem;
+  }
+}
+@media screen and (min-width: 800px) {
+  .form__error {
+    margin-left: 18rem;
+  }
+}
+@media screen and (min-width: 850px) {
+  .form__error {
+    margin-left: 20rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .form__error {
+    margin-left: 22rem;
+  }
+}
+@media screen and (min-width: 950px) {
+  .form__error {
+    margin-left: 24rem;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  body {
+    background: url(images/bg-pattern-desktop.svg) no-repeat center/cover;
+    min-height: 100vh;
+  }
+  main {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  main article {
+    flex: 1;
+  }
+  main article picture img {
+    margin: 0;
+  }
+  .logo__mobile {
+    display: none;
+  }
+  .logo__desktop {
+    display: block;
+    margin-bottom: 5rem;
+  }
+  .first-article {
+    margin-inline: 10rem;
+  }
+  .header__title {
+    text-align: initial;
+    margin: 0;
+    letter-spacing: 0.5rem;
+    margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+  }
+  .header__subtitle {
+    text-align: initial;
+    margin: 0;
+    margin-bottom: 2rem;
+    font-size: 18px;
+  }
+  .form__container {
+    justify-content: flex-start;
+  }
+  .form__error {
+    margin-left: 1.5rem;
+    font-size: 12px;
+  }
+  .email__input {
+    margin-right: 8rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .email__input {
+    margin-right: 9rem;
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+}
